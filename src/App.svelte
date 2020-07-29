@@ -2,6 +2,14 @@
     import Tailwind from "./Tailwind.svelte"
 </script>
 
+<style lang="scss">
+    main {
+        h1 {
+            font-size: 22rem;
+        }
+    }
+</style>
+
 <Tailwind />
 <main>
     <h1 class="text-blue-900">Hello!</h1>
