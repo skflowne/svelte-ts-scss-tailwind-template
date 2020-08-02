@@ -6,7 +6,7 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
     defaultExtractor: (content) => content.match(/[A-Za-z0-9-_:/]+/g) || [],
 })
 
-const dev = process.env.NODE_ENV === "development" || process.env.ROLLUP_WATCH
+const dev = process.env.ROLLUP_WATCH
 
 module.exports = {
     plugins: [require("tailwindcss"), ...(!dev ? [purgecss] : [])],
