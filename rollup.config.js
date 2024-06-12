@@ -48,6 +48,12 @@ export default {
             },
             preprocess: sveltePreprocess({
                 postcss: true,
+                scss: {
+                    includePaths: ["src"],
+                    postcss: {
+                        plugins: [require("autoprefixer")],
+                    },
+                },
             }),
         }),
 
