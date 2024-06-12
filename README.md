@@ -6,7 +6,20 @@ This is a template, use the command below to setup a new project
 
 ```
 npx degit https://github.com/skflowne/svelte-ts-scss-tailwind-template my-new-app
+cd my-new-app
 yarn
+```
+
+Run in development
+
+```
+yarn dev
+```
+
+Build for production
+
+```
+yarn build
 ```
 
 ## VSCode extension for Svelte
